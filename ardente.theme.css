@@ -14,6 +14,7 @@
     --theme-l: 0;
 }
 
+/* the main theme colors */
 .theme-dark {
     background: black;
     border-color: white;
@@ -25,6 +26,7 @@
     /* filter: invert(); */
 }
 
+/* most text on the app */
 span, 
 .label_d90b3d,
 .linkBottom_d8bfb3 .statusText_e66732
@@ -33,6 +35,7 @@ span,
     color: white;
 }
 
+/* both below are message borders */
 span[role] {
     border-bottom-width: 1px;
     border-style: solid;
@@ -45,9 +48,9 @@ li > div {
     margin: 5px;
     border-style: dashed;
     border-color: rgba(255, 255, 255, 0.155);
- 
 }
 
+/* text messages i think? */
 ol > li.messageListItem_d5deea > div[role="article"] {
     padding-bottom: 8px;
     /* text-align: center; */
@@ -55,18 +58,20 @@ ol > li.messageListItem_d5deea > div[role="article"] {
 }
 
 h3 {
-    
     text-align: start;
 }
 
+/* edited messages */
 .messagelogger-edited {
     background-color: #f0d9472d;
 }
 
+/* deleted messages */
 .messagelogger-deleted {
     background-color: rgba(165, 42, 42, 0.221);
 }
 
+/* losing option on a poll */
 ul[aria-label="Poll options"] > li.normalStylesDefault_b5cb3c > div {
     background-color: rgba(255, 0, 0, 0.32);
     border: 1px solid red;
@@ -78,8 +83,10 @@ div.wordmarkWindows_a934d8 {
     }
 }
 
+/* the little bar with "Discord" written on it and the minimize, maximize and close buttons */
 div.titleBar_a934d8 {
 
+    /* "Discord" text */
     svg {
         color: transparent;
         border-radius: 100%;
@@ -90,17 +97,20 @@ div.titleBar_a934d8 {
     div[aria-label="Minimize"] > svg {background-color: orange}
 }
 
+/* server name */
 .primaryInfo_fd6364 {
     padding: 8px;
     border-radius: 10px;
     border: 1px dashed white;
 }
 
+/* if u talkin, get the green */
 div.avatarSpeaking_c51b4e, 
 div.avatarSpeaking_d80634 {
     border: 2px solid green;
 }
 
+/* the names of people on the vc (vc grid view) */
 div.overlayContainer_ba4b17 {
     [class|="text"] {
         background-color: transparent;
@@ -109,15 +119,18 @@ div.overlayContainer_ba4b17 {
     }
 }
 
+/* dont even remember lol */
 .wrapper_b6e2f9 svg foreignObject {
     color: black;
 }
 
+/* annoying box kept showing on vc view so i disabled it (but not the text) */
 .chatToasts_d880dc {
     background-color: transparent;
     border: 0px;
 }
 
+/* default modal (like invite, etc.) */
 .modal_cedfaf {
     background-color: rgba(0, 0, 0, 0.434);
     border: 1px dashed white;
@@ -135,16 +148,24 @@ div.overlayContainer_ba4b17 {
     }
 }
 
+/* format the close dms button to the mac one */
 div.closeButton_c91bad[aria-label="Close DM"] > svg{
     background-color: red;
     color: transparent;
     border-radius: 100%;
 }
 
+/* dms tab list */
 [aria-label="Direct Messages"] > li {
     margin-right: 10px;
 }
 
+/* i tried fixing the friends tab but fuck it */
 a[href="/channels/@me"] {
     margin-right: -100px;
 }
+
+/* idfk
+.layerContainer_cd0de5 > .popout_3084 .textRow_c1d9fd {
+    font-family: 'Courier New';
+} */
