@@ -15,14 +15,20 @@
 }
 
 .theme-dark {
-    background-color: black;
+    background: black;
     border-color: white;
     border-width: 1px;
     border-radius: 10px;
     border-style: solid;
+    transition-duration: 100ms;
+    transition-timing-function: ease;
+    /* filter: invert(); */
 }
 
-span {
+span, 
+.label_d90b3d,
+.linkBottom_d8bfb3 .statusText_e66732
+{
     font-family: 'Cascadia Code';
     color: white;
 }
@@ -56,6 +62,89 @@ h3 {
 .messagelogger-edited {
     background-color: #f0d9472d;
 }
+
 .messagelogger-deleted {
     background-color: rgba(165, 42, 42, 0.221);
+}
+
+ul[aria-label="Poll options"] > li.normalStylesDefault_b5cb3c > div {
+    background-color: rgba(255, 0, 0, 0.32);
+    border: 1px solid red;
+}
+
+div.wordmarkWindows_a934d8 {
+    svg {
+        color: transparent;
+    }
+}
+
+div.titleBar_a934d8 {
+
+    svg {
+        color: transparent;
+        border-radius: 100%;
+    }
+
+    div[aria-label="Close"] > svg {background-color: red}
+    div[aria-label="Maximize"] > svg {background-color: green}
+    div[aria-label="Minimize"] > svg {background-color: orange}
+}
+
+.primaryInfo_fd6364 {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px dashed white;
+}
+
+div.avatarSpeaking_c51b4e, 
+div.avatarSpeaking_d80634 {
+    border: 2px solid green;
+}
+
+div.overlayContainer_ba4b17 {
+    [class|="text"] {
+        background-color: transparent;
+        text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+        1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+    }
+}
+
+.wrapper_b6e2f9 svg foreignObject {
+    color: black;
+}
+
+.chatToasts_d880dc {
+    background-color: transparent;
+    border: 0px;
+}
+
+.modal_cedfaf {
+    background-color: rgba(0, 0, 0, 0.434);
+    border: 1px dashed white;
+    border-radius: 10px;
+
+    > div {
+        margin: 8px;
+        border: 1px dashed white;
+        border-radius: 10px;
+    }
+    .closeIcon_f9a4c9 {
+        background-color: red;
+        color: transparent;
+        border-radius: 100%;
+    }
+}
+
+div.closeButton_c91bad[aria-label="Close DM"] > svg{
+    background-color: red;
+    color: transparent;
+    border-radius: 100%;
+}
+
+[aria-label="Direct Messages"] > li {
+    margin-right: 10px;
+}
+
+a[href="/channels/@me"] {
+    margin-right: -100px;
 }
